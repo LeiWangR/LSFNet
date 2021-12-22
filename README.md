@@ -1,4 +1,4 @@
-# A Feature Dataset for Scene Understanding and its Feature Analysis
+# A Feature Dataset for Scene Understanding
 
 *The author performed the work while he was a Computer Vision Research Intern at iCetana Pty Ltd.*
 
