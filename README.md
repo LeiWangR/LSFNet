@@ -1,6 +1,6 @@
-# A Feature Dataset and Feature Analysis
+# A Feature Dataset for Scene Understanding and its Feature Analysis
 
-## Introduction
+## 1 Introduction
 
 This repo contains:
 
@@ -13,12 +13,12 @@ This repo is for the ICIP2019 paper:
 
 Lei Wang, Du Q. Huynh, and Moussa Reda Mansour, "**Loss Switching Fusion with Similarity Search for Video Classification**," *2019 IEEE International Conference on Image Processing (ICIP)*, 2019, pp. 974-978, doi: 10.1109/ICIP.2019.8803051. [[ArXiv]](https://arxiv.org/abs/1906.11465)[[BibTex]](#citation)
 
-## Dataset
+## 2 Dataset
 
 we propose a novel video classification system that would benefit the scene understanding task. We define our classification problem as classifying
 background and foreground motions using the same feature representation for outdoor scenes. More detailed information can be found in our paper.
 
-### Subset descriptions
+### Feature dataset
 
 The subset of iCetanaPrivateDataset contains around 270 videos of various lengths. The average length of the videos in this dataset is approx. 280 frames, with long videos up to 19645 frames. They were captured in outdoor environments so issues, such as tree waving, camera shaking, noise, illumination changes, and rain, are common. Some videos have human motion also. The outdoor scenes include car parks, train stations, bus stops, etc. This subset has been manually labelled with 6 background motion class labels: tree waving, camera shaking, noisy video, rainy, illumination, and normal video:
 
@@ -39,6 +39,12 @@ We have provided the DT features extracted from this dataset in this repo, and f
 - trajectory
 - DT features/[fisher vectors](https://drive.google.com/file/d/1NWikCxiBjX1s6Khp9X9ue20mtv17ApdT/view?usp=sharing)
 
+The labels are provided in csv file in this repo:
+
+- `all_labels.csv`: 6 background motion classes (start from 0 to 5)
+- `human_labels.csv`: with/without human motions (with human motions are labelled as 1)
+
+
 ### Evaluation protocols
 
 There are two evaluation protocols for this feature dataset:
@@ -46,7 +52,17 @@ There are two evaluation protocols for this feature dataset:
 - testing how well the 6 background motion classes are classified. This is a multi-class classification problem;
 - testing how well the foreground motion is separated from those background motions. This is a binary classification problem.
 
-## 
+## Results of LSFNet
+
+Note that the results shown in the following table are for the whole dataset presented in the paper. 
+
+| Algorithms  | Background env. motion | Foreground human motion | 
+| ------------- | :---: | :---: |
+|  Fisher score + CCA |  81.5 |  85.2 |
+|  DT + FV + Fisher score + LSH |  83.6 | 86.5  |
+|  LSFNet | 83.3  |  85.2 |
+|  LSFNet + Fisher score |  85.2 |  87.0 |
+|  Our whole system | 88.9  |  90.7 |
 
 
 ## Citations
