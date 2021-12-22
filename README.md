@@ -39,7 +39,7 @@ We have provided the DT features extracted from this dataset in this repo, and f
 - trajectory
 - DT features/[fisher vectors](https://drive.google.com/file/d/1NWikCxiBjX1s6Khp9X9ue20mtv17ApdT/view?usp=sharing)
 
-We also provide the features extracted from C3D FC6 and FC7 layers in this repo.
+We also provide the features extracted from C3D FC6 and FC7 (after dropout) layers in this repo.
 
 The labels are provided in csv file in this repo:
 
