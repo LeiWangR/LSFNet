@@ -4,7 +4,7 @@
 
 This repo contains:
 
-- a smaller feature dataset for video classification, which are dense trajectory (DT) features extracted from a subset of iCetanaPrivateDataset,
+- a feature dataset for video classification, including dense trajectory (DT) features extracted from a subset of iCetanaPrivateDataset,
 - jupyter notebooks for a simple analysis of the DT features,
 - python codes for fisher vector encoding and 
 - a jupyter notebook for the use of fisher score in feature selection.
@@ -38,6 +38,8 @@ We have provided the DT features extracted from this dataset in this repo, and f
 - MBH (MBHx and MBHy)
 - trajectory
 - DT features/[fisher vectors](https://drive.google.com/file/d/1NWikCxiBjX1s6Khp9X9ue20mtv17ApdT/view?usp=sharing)
+
+We also provide the features extracted from C3D FC6 and FC7 layers in this repo.
 
 The labels are provided in csv file in this repo:
 
