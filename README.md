@@ -17,7 +17,7 @@ Lei Wang, Du Q. Huynh, and Moussa Reda Mansour, "**Loss Switching Fusion with Si
 
 ## 2 Dataset
 
-we propose a novel video classification system that would benefit the scene understanding task. We define our classification problem as classifying
+We propose a novel video classification system that would benefit the scene understanding task. We define our classification problem as classifying
 background and foreground motions using the same feature representation for outdoor scenes. More detailed information can be found in our paper.
 
 ### 2.1 Feature dataset
