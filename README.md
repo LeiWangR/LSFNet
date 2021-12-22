@@ -1,5 +1,7 @@
 # A Feature Dataset for Scene Understanding and its Feature Analysis
 
+*The author performed the work while he was a Computer Vision Research Intern at iCetana Pty Ltd.*
+
 ## 1 Introduction
 
 This repo contains:
@@ -18,7 +20,7 @@ Lei Wang, Du Q. Huynh, and Moussa Reda Mansour, "**Loss Switching Fusion with Si
 we propose a novel video classification system that would benefit the scene understanding task. We define our classification problem as classifying
 background and foreground motions using the same feature representation for outdoor scenes. More detailed information can be found in our paper.
 
-### Feature dataset
+### 2.1 Feature dataset
 
 The subset of iCetanaPrivateDataset contains around 270 videos of various lengths. The average length of the videos in this dataset is approx. 280 frames, with long videos up to 19645 frames. They were captured in outdoor environments so issues, such as tree waving, camera shaking, noise, illumination changes, and rain, are common. Some videos have human motion also. The outdoor scenes include car parks, train stations, bus stops, etc. This subset has been manually labelled with 6 background motion class labels: tree waving, camera shaking, noisy video, rainy, illumination, and normal video:
 
@@ -47,14 +49,14 @@ The labels are provided in csv file in this repo:
 - `human_labels.csv`: with/without human motions (with human motions are labelled as 1)
 
 
-### Evaluation protocols
+### 2.2 Evaluation protocols
 
 There are two evaluation protocols for this feature dataset:
 
 - testing how well the 6 background motion classes are classified. This is a multi-class classification problem;
 - testing how well the foreground motion is separated from those background motions. This is a binary classification problem.
 
-## Results of LSFNet
+## 3 Results of LSFNet
 
 Note that the results shown in the following table are for the whole dataset presented in the paper. 
 
@@ -67,7 +69,7 @@ Note that the results shown in the following table are for the whole dataset pre
 |  Our whole system | 88.9  |  90.7 |
 
 
-## Citations
+## 4 Citations
 <a name="citation"></a>
 You can cite the following paper for the use of this repo:
 
@@ -83,4 +85,3 @@ You can cite the following paper for the use of this repo:
   doi={10.1109/ICIP.2019.8803051}}
 
 ```
-
